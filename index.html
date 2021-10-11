@@ -1,35 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-  <main>
-  <h1>Klimkou Andrei</h1>
-  <img class="avatar" src="./avatar.jpg" alt="Photo Andrei Klimkou" width="320">
-  <section>
-   <ul>
-     <li><h3>Contact: +375336186698, email: AAKlimkov@gmail.com </h3>  </li>
-      <li> <mark>Summary:</mark>  I have an analytical mindset. I like to learn. I would like to gain strong knowledge in the frontend and in the future to work in this area.</li>
-      <li> <mark>Skills:</mark> Strong knowledge HTML,CSS,JS(ES6+),Sass,Git. Basic knowledge React,Webpack,Node.js.</li>
-      <li> <mark>Experience:</mark> I have only study experience in front-end.</li>
-      <li><mark>CodeExample:</mark> https://rolling-scopes-school.github.io/aaklimkov-JS2020Q3/keyboard/</li>
-      <li><mark>Education:</mark> BNTU (Civil Engineering) <time>2016</time></li>
-      <li><mark>Courses:</mark> RSSchool 2020 (JS / FRONT-END).</li>
-      <li><mark>English level:</mark> Intermediate. Experience: English courses at university.</li>
-  </ul>
-</section>
-</main>
-  <footer>
-    <a href="https://github.com/AAKlimkov"> Мой гитхаб</a>
-    <span> 2021 год</span>
-    <img src="./rs_school_js.svg" alt="Logo RSSchool" width="240">
-    <a href="https://rs.school/js/"> ссылка на курс</a>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Andrei Klimkou CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <nav>
+          <ul class="nav">
+            <li><a href="#About-me">About me</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Code">Code</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Projects">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
 
+      <main class="main">
+        <aside class="aside">
+          <div class="photo">
+            <figure>
+              <img
+                class="avatar"
+                src="./avatar.jpg"
+                alt="Photo Andrei Klimkou"
+                width="304"
+                height="304"
+              />
+            </figure>
+          </div>
+          <section class="contacts" id="Contact">
+            <h2>Contacts</h2>
+            <ul>
+              <li>
+                <h3>Phone :</h3>
+                <a href="tel:+375336186698" class="phone">
+                  +375 (33) 618 66 98</a
+                >
+              </li>
+              <li>
+                <h3>Email :</h3>
+                <a href="mailto:AAKlimkov@gmail.com" class="email">
+                  AAKlimkov@gmail.com
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills" id="Skills">
+            <h2>Skills</h2>
 
+            <ul>
+              <li class="edu-li">Engineering</li>
+              <li class="edu-li">HTML</li>
+              <li class="edu-li">CSS/SASS</li>
+              <li class="edu-li">JavaScript</li>
+            </ul>
+          </section>
+        </aside>
+        <div class="information">
+          <h1>Andrei Klimkou</h1>
+          <p class="tit-p">Front-end developer</p>
+          <div class="summary sec" id="About-me">
+            <h2>About me</h2>
+            <div class="text">
+              <p>
+                Now I work in the construction sector and study at the frontend
+                courses.
+              </p>
+              <p>
+                The main goal is starting my career as a Junior Front-End
+                developer. I want to improve my JavaScript skills and to get job
+                as Frontend developer.
+              </p>
+            </div>
+          </div>
+          <div class="Projects sec" id="Projects">
+            <h2>My projects</h2>
+            <ul class="project-list">
+              <li class="project-item">
+                <a
+                  href="https://rolling-scopes-school.github.io/aaklimkov-JS2020Q3/calculator/"
+                  target="_blank"
+                  ><img src="./Calc.jpg" alt="Calc screenshot" class="project_img"
+                /></a>
+                <h3 class="project_title">Calculator</h3>
+              </li>
+              <li class="project-item">
+                <a href="" target="_blank"><img src="./Keyboard.jpg" alt="Keyboard screenshot" class="project_img" /></a>
+                <h3 class="project_title">Keyboard</h3>
+
+              </li>
+              <li class="project-item">
+                <a href="" target="_blank"><img src="" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-example sec" id="Code">
+            <h2>Code-example</h2>
+            <p>
+              Build a calculator that can calculate the average for an arbitrary
+              number of arguments.
+            </p>
+            <pre>
+            <code>
+    let Calculator = {
+      average: function() {
+        return  [...arguments].reduce((sum,el)=>sum+el,0)/([...arguments].length||1)
+        }
+      };
+           </code>
+          </pre>
+          </div>
+          <div class="education sec" id="Education">
+            <h2>Education</h2>
+            <ul>
+              <li class="edu-li">
+                Belarusian National Technical University 2009-2016
+              </li>
+              <li class="edu-li">Rolling scopes school 2020-2021</li>
+            </ul>
+          </div>
+
+          <div class="english sec">
+            <h2>English</h2>
+            <p>Pre-intermediate / Intermediate (A2/B1)</p>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <a href="https://github.com/AAKlimkov"> GitHub Andrei Klimkou</a>
+        <p class="footer_p">2021 год</p>
+
+        <a href="https://rs.school/js/">
+          <img src="./rs_school_js.svg" alt="Logo RSSchool" width="240" class="footer_img" />
+        </a>
+      </footer>
+    </div>
+  </body>
 </html>
